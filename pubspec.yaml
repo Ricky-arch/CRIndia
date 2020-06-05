@@ -20,6 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
   carousel_slider: ^1.4.1
+  fl_chart: ^0.9.4
+  flutter_email_sender: ^3.0.1
+  flutter_mailer: ^0.5.0
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -49,6 +53,9 @@ flutter:
     - images/slider/1.jpg
     - images/slider/2.jpg
     - images/slider/3.jpg
+    - images/persons/p1.jpeg
+    - images/persons/p2.jpg
+    - images/persons/p3.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
