@@ -126,7 +126,7 @@ class _HomeViewState extends State<HomeView> {
               ),
               Spacer(),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => AllExpertise()),
@@ -135,25 +135,26 @@ class _HomeViewState extends State<HomeView> {
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(15.0, 0.0, 15, 0.0),
                   child: Container(
-                    child: Text(
-                      "Show All ->",
-                      style: TextStyle(color: Colors.yellow, fontSize: 18),
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Show All ",
+                        style: TextStyle(color: Colors.black, fontSize: 16),
+                      ),
                     ),
                   ),
                 ),
               ),
             ],
           ),
-          SizedBox(height: 5,),
-
+          SizedBox(
+            height: 5,
+          ),
           Padding(
             padding: EdgeInsets.fromLTRB(40, 20, 0, 0.0),
             child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
-                      bottomLeft: Radius.circular(50)),
-                  color: Colors.white),
+              decoration: BoxDecoration(color: Colors.white),
               child: ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
@@ -161,7 +162,7 @@ class _HomeViewState extends State<HomeView> {
                   itemCount: Data.domainExpertise.length,
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 8, 0, 7),
+                      padding: const EdgeInsets.fromLTRB(15, 15, 0, 7),
                       child: CustomCard(
                         expertise: Data.domainExpertise[index],
                       ),
@@ -190,15 +191,11 @@ class _HomeViewState extends State<HomeView> {
             padding: EdgeInsets.fromLTRB(0, 30, 40, 0.0),
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(50),
-                      bottomRight: Radius.circular(50)),
+
                   color: Colors.white),
               child: Column(
                 children: <Widget>[
-                  SizedBox(
-                    height: 20,
-                  ),
+
                   ListView.builder(
                       physics: NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
@@ -254,15 +251,13 @@ class _HomeViewState extends State<HomeView> {
                           ],
                         );
                       }),
-                  SizedBox(
-                    height: 32,
-                  )
+
                 ],
               ),
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 30,
           )
         ],
       ),

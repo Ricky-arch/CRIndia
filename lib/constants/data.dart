@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Data {
+  static List homeExpertise=[];
+  static List<String> testImages = [
+    "images/testing/core_cutting/cc1.jpg",
+    "images/testing/core_cutting/cc2.jpg",
+    "images/testing/core_cutting/cc3.jpg",
+    "images/testing/core_cutting/cc4.jpg",
+    "images/testing/core_cutting/cc5.jpg",
+    "images/testing/core_cutting/cc6.jpg",
+    "images/testing/core_cutting/cc7.jpg",
+    "images/testing/core_cutting/cc8.jpg",
+    "images/testing/core_cutting/cc9.jpg",
+  ];
   static Color backgroundColor = Color.fromRGBO(0, 7, 17, 9);
   static String companyQuote =
       "We have dedicated serious effort and time in learning and performing best on industry practices.\nWe provide exhaustive set of strengthening methodologies, compliant across industry domains. Our leadership is knowledgeable and capable with diverse set of experience to accomplish meaningful work.";
@@ -34,9 +46,9 @@ class Data {
   ];
 
   static List carousal = [
-    {"title": "Testing", "imagepath": "images/slider/3.jpg"},
-    {"title": "Repairing", "imagepath": "images/slider/3.jpg"},
-    {"title": "Retrofitting", "imagepath": "images/slider/3.jpg"}
+    {"title": "Testing", "imagepath": "images/slider/slider1.jpg"},
+    {"title": "Repairing", "imagepath": "images/slider/slider2.jpg"},
+    {"title": "Retrofitting", "imagepath": "images/slider/slider3.jpg"}
   ];
   static List<String> domainExpertise = [
     "Concrete Repair and Restoration",
@@ -79,6 +91,13 @@ class Data {
       "list": [
         {
           "title": "Rebound Hammer",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+            "images/testing/rebound_hammer/rh2.jpg",
+            "images/testing/rebound_hammer/rh3.jpg",
+            "images/testing/rebound_hammer/rh4.jpg",
+            "images/testing/rebound_hammer/rh5.jpg"
+          ],
           "duration": "3-4hrs",
           "noOfWorks": "100",
           "about":
@@ -86,6 +105,14 @@ class Data {
         },
         {
           "title": "Ultrasonic Pulse Velocity",
+          "images": [
+            "images/testing/upv/upv1.jpg",
+            "images/testing/upv/upv2.jpg",
+            "images/testing/upv/upv3.jpg",
+            "images/testing/upv/upv4.jpg",
+            "images/testing/upv/upv5.jpg",
+            "images/testing/upv/upv6.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -93,6 +120,10 @@ class Data {
         },
         {
           "title": "Covermeter Test",
+          "images": [
+            "images/testing/cover_meter/cm1.jpg",
+            "images/testing/cover_meter/cm2.jpg"
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -100,6 +131,17 @@ class Data {
         },
         {
           "title": "Core Cutting",
+          "images": [
+            "images/testing/core_cutting/cc1.jpg",
+            "images/testing/core_cutting/cc2.jpg",
+            "images/testing/core_cutting/cc3.jpg",
+            "images/testing/core_cutting/cc4.jpg",
+            "images/testing/core_cutting/cc5.jpg",
+            "images/testing/core_cutting/cc6.jpg",
+            "images/testing/core_cutting/cc7.jpg",
+            "images/testing/core_cutting/cc8.jpg",
+            "images/testing/core_cutting/cc9.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -107,6 +149,9 @@ class Data {
         },
         {
           "title": "Carbanotio Test",
+          "images": [
+            "images/testing/carbonation/carbonation.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -114,6 +159,9 @@ class Data {
         },
         {
           "title": "Half-Cell Potential",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -128,6 +176,9 @@ class Data {
       "list": [
         {
           "title": "Supplemental Steel System",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -135,6 +186,9 @@ class Data {
         },
         {
           "title": "Section Enlargement",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -142,6 +196,9 @@ class Data {
         },
         {
           "title": "Fibre(FBR) Wrapping",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -149,6 +206,9 @@ class Data {
         },
         {
           "title": "Water Proofing",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -156,12 +216,18 @@ class Data {
         },
         {
           "title": "Fire Proofing",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "about": "Fire Proofing",
           "duration": "3-4hrs",
           "noOfWorks": "100",
         },
         {
           "title": "Expansion Joint Treatment",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -176,6 +242,9 @@ class Data {
       "list": [
         {
           "title": "Micro-Concreting",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -183,6 +252,9 @@ class Data {
         },
         {
           "title": "Rust-Removal and Protection",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -190,6 +262,9 @@ class Data {
         },
         {
           "title": "Cementitious Grouting",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -197,12 +272,18 @@ class Data {
         },
         {
           "title": "Epoxy Injection",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "duration": "3-4hrs",
           "about": "Epoxy Injection",
           "noOfWorks": "100",
         },
         {
           "title": "Corrosion Inhibition",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -210,6 +291,9 @@ class Data {
         },
         {
           "title": "Polymer Resurfacing",
+          "images": [
+            "images/testing/rebound_hammer/rh1.jpg",
+          ],
           "noOfWorks": "100",
           "duration": "3-4hrs",
           "about":
@@ -225,9 +309,10 @@ class Data {
   ];
   static List<Color> pieColors = [Colors.blue, Colors.red, Colors.orangeAccent];
   static Map contactDetails = {
+    "officialWeb":"https://www.crindia.in/",
     "Address":
         "1st Floor, Gamma- 226, One City Sec- 37 Rohtak- 124 001, HR, India",
-    "Email": "srvsutradhar7@gmail.com",
+    "Email": "info@crindia.in",
     "Phone Number1": "+91 857-794-0876",
     "Phone Number2": "+91 740-414-7616",
     "Twitter": "https://twitter.com/crindia_",

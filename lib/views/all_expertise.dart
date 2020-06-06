@@ -156,6 +156,7 @@ class _AllExpertiseState extends State<AllExpertise> {
                                                 ['list'][i]['about'],
                                             noOfWorks: Data.allExpertise[index]
                                                 ['list'][i]['noOfWorks'],
+                                        imageUrl: Data.allExpertise[index]['list'][i]['images'],
                                           )),
                                 );
                               },

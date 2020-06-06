@@ -1,5 +1,6 @@
 import 'package:crindia/constants/data.dart';
 import 'package:crindia/custom_widgets/about_person_widget.dart';
+import 'package:crindia/custom_widgets/company_contacts.dart';
 import 'package:crindia/custom_widgets/form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -118,6 +119,13 @@ class _AboutViewState extends State<AboutView> {
                         ),
                       ],
                     )),
+              ),
+              CompanyContacts(
+                mail: Data.contactDetails['Email'],
+                twitter: Data.contactDetails['Twitter'],
+                instagram: Data.contactDetails['Instagram'],
+                officialWeb: Data.contactDetails['officialWeb'],
+                mediumLink: Data.contactDetails['Medium'],
               ),
             ],
           )
