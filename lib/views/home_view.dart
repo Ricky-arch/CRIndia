@@ -108,6 +108,7 @@ class _HomeViewState extends State<HomeView> {
                   return CarousalWidget(
                     imagePath: i['imagepath'],
                     title: i['title'],
+
                   );
                 },
               );

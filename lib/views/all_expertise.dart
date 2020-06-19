@@ -1,5 +1,6 @@
 import 'package:crindia/constants/data.dart';
 import 'package:crindia/custom_widgets/about_expertise.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AllExpertise extends StatefulWidget {
@@ -10,6 +11,58 @@ class AllExpertise extends StatefulWidget {
 class _AllExpertiseState extends State<AllExpertise> {
   getWord<T>(String s) {
     return s.split(" ");
+  }
+
+  _showExpertiseDefinition(context, var title, var about) {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return Wrap(
+            children: [
+              Container(
+                decoration: BoxDecoration(color: Colors.white),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          "What is " + title + "?",
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(10.0, 0, 10, 0),
+                      child: Divider(
+                        color: Colors.black54,
+                      ),
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          about,
+                          maxLines: null,
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                    ), SizedBox(height: 10,)
+                  ],
+                ),
+              ),
+            ],
+          );
+        });
   }
 
   @override
@@ -129,7 +182,12 @@ class _AllExpertiseState extends State<AllExpertise> {
                                   ),
                                   Spacer(),
                                   IconButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      _showExpertiseDefinition(
+                                          context,
+                                          Data.allExpertise[index]['title'],
+                                          Data.allExpertise[index]['about']);
+                                    },
                                     icon: Icon(
                                       Icons.question_answer,
                                       color: Colors.yellow,
@@ -156,7 +214,8 @@ class _AllExpertiseState extends State<AllExpertise> {
                                                 ['list'][i]['about'],
                                             noOfWorks: Data.allExpertise[index]
                                                 ['list'][i]['noOfWorks'],
-                                        imageUrl: Data.allExpertise[index]['list'][i]['images'],
+                                            imageUrl: Data.allExpertise[index]
+                                                ['list'][i]['images'],
                                           )),
                                 );
                               },

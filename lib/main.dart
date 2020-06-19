@@ -5,6 +5,7 @@ import 'package:crindia/views/navigation_screen.dart';
 import 'package:crindia/views/splash_screen.dart';
 import 'package:crindia/views/stats_view.dart';
 import 'package:crindia/views/all_expertise.dart';
+import 'package:crindia/views/test.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_widgets/custom_pie.dart';
@@ -17,11 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(),
       home: Scaffold(
         backgroundColor: Color.fromRGBO(0, 7, 17, 9),
-        body: SplashScreen(),
+        body: Test(),
       ),
     );
   }

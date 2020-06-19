@@ -6,6 +6,7 @@ class CarousalWidget extends StatelessWidget {
   final String imagePath;
   final String title;
 
+
   const CarousalWidget({Key key, this.imagePath, this.title}) : super(key: key);
   @override
   Widget build(BuildContext context) {

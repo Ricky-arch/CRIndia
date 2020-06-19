@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Data {
-  static List homeExpertise=[];
+  static List homeExpertise = [];
   static List<String> testImages = [
     "images/testing/core_cutting/cc1.jpg",
     "images/testing/core_cutting/cc2.jpg",
@@ -86,7 +86,8 @@ class Data {
   static List allExpertise = [
     {
       "title": "Structural Testing",
-      "about": "",
+      "about":
+          "We PERFORM Structural Integrity Audits for RCC Structures, both Industrial and Commercial, through Non-Destructive Testing: Rebound Hammer, Ultrasonic Pulse Velocity Detection, and other methodologies: chemical analysis, core cutting, carbonation test, etc for concrete diagnostics.",
       "noOfWorks": "100",
       "list": [
         {
@@ -148,7 +149,7 @@ class Data {
               "Core cutting test is done to test the concrete at various depths. core collected can be used for carbonation tests and also to calculate chloride ingress."
         },
         {
-          "title": "Carbanotio Test",
+          "title": "Carbonation Test",
           "images": [
             "images/testing/carbonation/carbonation.jpg",
           ],
@@ -171,7 +172,8 @@ class Data {
     },
     {
       "title": "Structural Retrofitting",
-      "about": "",
+      "about":
+          "We PROVIDE Concrete Repair and Restoration Services (replacing or resurfacing concrete, epoxy injection, cementitious grouting, corrosion treatment) for multi-storeyed complexes, infrastructure- bridges, dams, jetty, and industrial structures- silo, chimney, cooling tower, and more.",
       "noOfWorks": "100",
       "list": [
         {
@@ -237,7 +239,8 @@ class Data {
     },
     {
       "title": "Structural Repairing",
-      "about": "",
+      "about":
+          "We PREPARE Structures for Future by enhancing structural components through supplemental steel systems, section enlargement, etc and enhancing support systems through protective coatings- waterproofing and fireproofing, expansion joints treatment and others.",
       "noOfWorks": "100",
       "list": [
         {
@@ -309,7 +312,7 @@ class Data {
   ];
   static List<Color> pieColors = [Colors.blue, Colors.red, Colors.orangeAccent];
   static Map contactDetails = {
-    "officialWeb":"https://www.crindia.in/",
+    "officialWeb": "https://www.crindia.in/",
     "Address":
         "1st Floor, Gamma- 226, One City Sec- 37 Rohtak- 124 001, HR, India",
     "Email": "info@crindia.in",
