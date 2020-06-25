@@ -82,6 +82,7 @@ flutter:
     - images/testing/rebound_hammer/
     - images/testing/upv/
     - images/playstore.png
+    - images/process/process.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

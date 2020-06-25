@@ -156,6 +156,21 @@ class _StatsViewState extends State<StatsView> {
                     ),
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Container(
+                  child: Text(
+                    "The Process",
+                    style: TextStyle(color: Colors.yellow, fontSize: 18),
+                  ),
+                ),
+              ),
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(15,0,15,15),
+                  child:Image.asset("images/process/process.png"),
+                ),
               )
             ],
           )

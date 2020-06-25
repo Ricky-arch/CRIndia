@@ -323,4 +323,28 @@ class Data {
     "Medium":
         "https://medium.com/@crindia/concrete-section-enlargement-technique-ccb1ad091bae"
   };
+  static List pf = [
+    {
+      "title": "Industrial Services",
+      "available": [
+        "Jetty",
+        "Silo",
+        "Digester",
+        "Cooling Tower",
+        "Machine Foundation"
+      ]
+    },
+    {
+      "title": "Commercial Complexes ",
+      "available": [
+        "High Rise",
+        "Offices",
+        "Factories",
+      ]
+    },
+    {
+      "title": "Infrastructural Structures",
+      "available": ["Flyover", "Bridge", "STP", "Damn", "Airport"]
+    }
+  ];
 }

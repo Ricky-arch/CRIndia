@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(),
       home: Scaffold(
         backgroundColor: Color.fromRGBO(0, 7, 17, 9),
-        body: Test(),
+        body: SplashScreen(),
       ),
     );
   }

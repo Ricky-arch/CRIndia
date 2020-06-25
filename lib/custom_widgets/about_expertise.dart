@@ -35,169 +35,193 @@ class _AboutExpertiseState extends State<AboutExpertise> {
         //backgroundColor: Data.backgroundColor,
         title: Stack(
           children: <Widget>[
-            Container(
-                child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 8, 8, 8),
-              child: Text(
-                widget.title,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold),
-              ),
-            ))
+            Row(
+              children: [
+                Container(
+                    child: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 8, 8, 8),
+                  child: Text(
+                    widget.title,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold),
+                  ),
+                )),
+                Spacer(),
+                IconButton(
+                  icon: Icon(Icons.arrow_left),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                )
+              ],
+            )
           ],
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: [
-          Container(
-            decoration: BoxDecoration(
-                color: Data.backgroundColor,
-                borderRadius:
-                    BorderRadius.only(bottomRight: Radius.circular(60))),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Text(
-                      "About: ",
-                      style: TextStyle(
-                        color: Colors.yellow,
-                        fontSize: 20,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                    color: Data.backgroundColor,
+                    borderRadius:
+                        BorderRadius.only(bottomRight: Radius.circular(60))),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Text(
+                          "About: ",
+                          style: TextStyle(
+                            color: Colors.yellow,
+                            fontSize: 20,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      widget.about,
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 7,
-                ),
-                Container(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Text(
-                      "Current Number of Works: ",
-                      style: TextStyle(
-                        color: Colors.yellow,
-                        fontSize: 20,
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          widget.about,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      widget.noOfWorks,
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400),
+                    SizedBox(
+                      height: 7,
                     ),
-                  ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Text(
-                      "Duration of Work: ",
-                      style: TextStyle(
-                        color: Colors.yellow,
-                        fontSize: 20,
+                    Container(
+                      child: Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Text(
+                          "Current Number of Works: ",
+                          style: TextStyle(
+                            color: Colors.yellow,
+                            fontSize: 20,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      "3-4 hrs",
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          widget.noOfWorks,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                SizedBox(
-                  height: 15,
-                ),
-              ],
-            ),
-          ),
-          Container(
-            child: Padding(
-              padding: EdgeInsets.all(8),
-              child: Text(
-                "Gallery: ",
-                style: TextStyle(
-                  color: Data.backgroundColor,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 20,
+                    Container(
+                      child: Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Text(
+                          "Duration of Work: ",
+                          style: TextStyle(
+                            color: Colors.yellow,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "3-4 hrs",
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                  ],
                 ),
               ),
-            ),
-          ),
-          Expanded(
-            child: ListView.builder(
-              scrollDirection: Axis.vertical,
-                itemCount: 1,
-                itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    height: 1000,
-                    child: Padding(
-                        padding: const EdgeInsets.only(top: 12.0),
-                        child: new StaggeredGridView.countBuilder(
-                          crossAxisCount: 4,
-                          itemCount: widget.imageUrl.length,
-                          itemBuilder: (BuildContext context, int index) =>
-                              GestureDetector(
-                            onTap: () {
-                              print("hello World");
-                            },
-                            child: new Container(
-                                color: Colors.white,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(3.0),
-                                  child:
-                                      ImageTile(imageUrl: widget.imageUrl[index]),
-                                )),
-                          ),
-                          staggeredTileBuilder: (int index) =>
-                              new StaggeredTile.count(2, index.isEven ? 2 : 1),
-                          mainAxisSpacing: 4.0,
-                          crossAxisSpacing: 4.0,
-                        )),
-                  );
-                }),
-          ),
-          Center(
-            child: IconButton(
-              icon: Icon(Icons.arrow_left),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
+              Container(
+                child: Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Text(
+                    "Gallery: ",
+                    style: TextStyle(
+                      color: Data.backgroundColor,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
+              ListView.builder(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemCount: widget.imageUrl.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                        child: Image.asset(widget.imageUrl[index]),
+                      ),
+                    );
+                  }),
+//          Expanded(
+//            child: ListView.builder(
+//                scrollDirection: Axis.vertical,
+//                itemCount: 1,
+//                itemBuilder: (BuildContext context, int index) {
+//                  return Container(
+//                    height: 1000,
+//                    child: Padding(
+//                        padding: const EdgeInsets.only(top: 12.0),
+//                        child: new StaggeredGridView.countBuilder(
+//                          crossAxisCount: 4,
+//                          itemCount: widget.imageUrl.length,
+//                          itemBuilder: (BuildContext context, int index) =>
+//                              GestureDetector(
+//                            onTap: () {
+//                              print("hello World");
+//                            },
+//                            child: new Container(
+//                                color: Colors.white,
+//                                child: Padding(
+//                                  padding: const EdgeInsets.all(3.0),
+//                                  child: ImageTile(
+//                                      imageUrl: widget.imageUrl[index]),
+//                                )),
+//                          ),
+//                          staggeredTileBuilder: (int index) =>
+//                              new StaggeredTile.count(2, index.isEven ? 2 : 1),
+//                          mainAxisSpacing: 4.0,
+//                          crossAxisSpacing: 4.0,
+//                        )),
+//                  );
+//                }),
+//          ),
+            ],
           )
         ],
       ),
