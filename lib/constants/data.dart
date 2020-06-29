@@ -55,7 +55,7 @@ class Data {
     "Corrosion Mitigation",
     "Structural Strengthening",
     "Grouting and Injection",
-    "Strutural Health Strengthening",
+    "Structural Health Strengthening",
     "Waterproofing",
     "Fireproofing",
     "Expansion Joint Treatment"

@@ -3,6 +3,7 @@ import 'package:crindia/constants/data.dart';
 import 'package:crindia/custom_widgets/carousal_widget.dart';
 import 'package:crindia/custom_widgets/custom_card.dart';
 import 'package:crindia/views/all_expertise.dart';
+import 'package:crindia/views/test.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -150,27 +151,10 @@ class _HomeViewState extends State<HomeView> {
             ],
           ),
           SizedBox(
-            height: 5,
+            height: 20,
           ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(40, 20, 0, 0.0),
-            child: Container(
-              decoration: BoxDecoration(color: Colors.white),
-              child: ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  itemCount: Data.domainExpertise.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Padding(
-                      padding: const EdgeInsets.fromLTRB(15, 15, 0, 7),
-                      child: CustomCard(
-                        expertise: Data.domainExpertise[index],
-                      ),
-                    );
-                  }),
-            ),
-          ),
+
+          Test(),
           SizedBox(
             height: 20,
           ),
