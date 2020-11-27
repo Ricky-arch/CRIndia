@@ -1,6 +1,5 @@
 # crindia
-
-A new Flutter application.
+My summer internship 2020.
 
 ## Getting Started
 
